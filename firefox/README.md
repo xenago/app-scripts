@@ -15,6 +15,29 @@ Disable user-hostile "what's new" page:
   * https://kb.mozillazine.org/Startup.homepage_override_url
   * When a user starts up their browser after upgrading (i.e., if browser.startup.homepage_override.mstone is different than the last time the browser started), the URL specified in this preference is loaded instead of their homepage
 
+Disable update popup:
+
+* `app.update.doorhanger` set to `false`
+
 Disable remote extension blocking on '[quarantined](https://support.mozilla.org/en-US/kb/quarantined-domains)' domains:
 
 * `extensions.quarantinedDomains.enabled` set to `false`
+
+On Developer version only, disable addon signing:
+
+* `xpinstall.signatures.required` set to `false`
+
+## Load unsigned addons
+
+Mozilla is an unethical company that tries to prevent users from running their own code, and gaslights users to try to convince them that ad tracking is for their own benefit.
+
+Temporary: go to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox) to load `manifest.json` from unpacked zip
+
+Permanent: use firefox developer with above tweak to `xpinstall.signatures.required`.
+
+# Install magnolia1234's Bypass Paywalls Clean
+
+Installation: https://github.com/bpc-clone/bypass-paywalls-firefox-clean?tab=readme-ov-file#installation
+
+1. Download `*-custom.xpi` file from [GitHub releases page](https://github.com/bpc-clone/bpc_updates/releases/tag/latest)
+2. Enable the debug menu (`Settings` > `About` > tap Firefox logo 5 times > return to settings > `Install extension from file`).
