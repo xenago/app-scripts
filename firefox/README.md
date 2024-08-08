@@ -15,4 +15,6 @@ Disable user-hostile "what's new" page:
   * https://kb.mozillazine.org/Startup.homepage_override_url
   * When a user starts up their browser after upgrading (i.e., if browser.startup.homepage_override.mstone is different than the last time the browser started), the URL specified in this preference is loaded instead of their homepage
 
+Disable remote extension blocking on '[quarantined](https://support.mozilla.org/en-US/kb/quarantined-domains)' domains:
 
+* `extensions.quarantinedDomains.enabled` set to `false`
