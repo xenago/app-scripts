@@ -31,11 +31,12 @@ On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
 
-## Official addons
+## Mozilla-hosted addons
 
-* Fix awful Wikipedia UI without logging in: [Classic mode for Wikipedia](https://addons.mozilla.org/firefox/addon/classic-wikipedia/)
 * Block ads: [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * Block sponsors embedded in YouTube videos: [SponsorBlock](https://addons.mozilla.org/firefox/addon/sponsorblock/)
+* Fix awful Wikipedia UI without logging in: [Classic mode for Wikipedia](https://addons.mozilla.org/firefox/addon/classic-wikipedia/)
+* Fix awful Reddit UI without manually going to old subdomain: [Old Reddit Redirect](https://addons.mozilla.org/en-CA/firefox/addon/old-reddit-redirect/)
 
 ## Load unsigned addons
 
