@@ -19,6 +19,10 @@ Disable update popup:
 
 * `app.update.doorhanger` set to `false`
 
+Disable showing 'suggested sites' nonsense (Wikipedia, Facebook, Twitter, YouTube etc.):
+
+* `browser.urlbar.suggest.topsites` set to `false`
+
 Disable remote extension blocking on '[quarantined](https://support.mozilla.org/en-US/kb/quarantined-domains)' domains:
 
 * `extensions.quarantinedDomains.enabled` set to `false`
