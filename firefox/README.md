@@ -43,5 +43,5 @@ Permanent: use firefox developer with above tweak to `xpinstall.signatures.requi
 
 Installation: https://github.com/bpc-clone/bypass-paywalls-firefox-clean?tab=readme-ov-file#installation
 
-1. Download `*-custom.xpi` file from [GitHub releases page](https://github.com/bpc-clone/bpc_updates/releases/tag/latest)
+1. Download `*-custom.xpi` file from [GitFlic releases page](https://gitflic.ru/project/magnolia1234/bpc_uploads)
 2. Enable the debug menu (`Settings` > `About` > tap Firefox logo 5 times > return to settings > `Install extension from file`).
