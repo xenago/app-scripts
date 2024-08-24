@@ -23,13 +23,19 @@ Disable showing 'suggested sites' nonsense (Wikipedia, Facebook, Twitter, YouTub
 
 * `browser.urlbar.suggest.topsites` set to `false`
 
-Disable remote extension blocking on '[quarantined](https://support.mozilla.org/en-US/kb/quarantined-domains)' domains:
+Disable remote extension blocking on '[quarantined](https://support.mozilla.org/kb/quarantined-domains)' domains:
 
 * `extensions.quarantinedDomains.enabled` set to `false`
 
 On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
+
+## Official addons
+
+* Fix awful Wikipedia UI without logging in: [Classic mode for Wikipedia](https://addons.mozilla.org/firefox/addon/classic-wikipedia/)
+* Block ads: [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
+* Block sponsors embedded in YouTube videos: [SponsorBlock](https://addons.mozilla.org/firefox/addon/sponsorblock/)
 
 ## Load unsigned addons
 
