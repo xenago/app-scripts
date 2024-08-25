@@ -35,6 +35,7 @@ On Developer version only, disable addon signing:
 
 * Block ads: [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * Block sponsors embedded in YouTube videos: [SponsorBlock](https://addons.mozilla.org/firefox/addon/sponsorblock/)
+* Spoof Chrome to trick badware sites into loading: [Chrome Mask](https://addons.mozilla.org/firefox/addon/chrome-mask/)
 * Fix awful Wikipedia UI without logging in: [Classic mode for Wikipedia](https://addons.mozilla.org/firefox/addon/classic-wikipedia/)
 * Fix awful Reddit UI without manually going to old subdomain: [Old Reddit Redirect](https://addons.mozilla.org/en-CA/firefox/addon/old-reddit-redirect/)
 
