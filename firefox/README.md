@@ -47,10 +47,25 @@ Temporary: go to [about:debugging#/runtime/this-firefox](about:debugging#/runtim
 
 Permanent: use firefox developer with above tweak to `xpinstall.signatures.required`.
 
-# Install magnolia1234's Bypass Paywalls Clean
+## Install magnolia1234's Bypass Paywalls Clean
 
-Installation: https://github.com/bpc-clone/bypass-paywalls-firefox-clean?tab=readme-ov-file#installation
+Installation info: https://github.com/bpc-clone/bypass-paywalls-firefox-clean?tab=readme-ov-file#installation
 
 1. Download `*-custom.xpi` file from [GitFlic releases page](https://gitflic.ru/project/magnolia1234/bpc_uploads)
 2. On Desktop, use the cog in the top-right of the extensions page to install the addon from the downloaded file.
 3. On Android, enable the debug menu (`Settings` > `About` > tap Firefox logo 5 times > return to settings > `Install extension from file`).
+
+## Install without Administrator privileges
+
+It is possible to install the local single-user Firefox alongside the global multi-user one (which requires Admin privileges). This can be useful if using a corporate-managed machine which does not give the user any freedom.
+
+1. Run the Firefox installer
+2. When requested for Admin privileges, decline
+3. The installation will proceed locally in the folder `%localappdata%\Mozilla Firefox`
+
+## Migrate/import profiles
+
+1. Go to `%appdata%\Mozilla\Firefox\Profiles` or equivalent
+2. Copy to new system
+3. Start up new Firefox install, go to `about:profiles` and select the one that you imported
+4. Restart browser (and repeat until the default profile is correct)
