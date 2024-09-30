@@ -18,6 +18,7 @@ Disable user-hostile "what's new" page:
 Disable update popup:
 
 * `app.update.doorhanger` set to `false`
+* `app.update.silent` set to `true`
 
 Disable showing 'suggested sites' nonsense (Wikipedia, Facebook, Twitter, YouTube etc.):
 
