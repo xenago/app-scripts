@@ -15,11 +15,6 @@ Disable user-hostile "what's new" page:
   * https://kb.mozillazine.org/Startup.homepage_override_url
   * When a user starts up their browser after upgrading (i.e., if browser.startup.homepage_override.mstone is different than the last time the browser started), the URL specified in this preference is loaded instead of their homepage
 
-Disable update popup:
-
-* `app.update.doorhanger` set to `false`
-* `app.update.silent` set to `true`
-
 Disable showing 'suggested sites' nonsense (Wikipedia, Facebook, Twitter, YouTube etc.):
 
 * `browser.urlbar.suggest.topsites` set to `false`
@@ -31,6 +26,19 @@ Disable remote extension blocking on '[quarantined](https://support.mozilla.org/
 On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
+
+## `policies.json` Overrides
+
+Disable automatic updates (holy hell they are irritating, it is as though the browser is designed to kill productivity):
+
+* [Copy](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson) `policies.json` to one of these locations based on OS:
+  * `C:\Program Files\Mozilla Firefox\distribution`
+  * `Firefox.app/Contents/Resources/distribution`
+  * `/etc/firefox/policies` or `firefox/distribution`
+
+* The following `about:config` options are **PLACEBOS AND SHOULD BE AVOIDED**
+  * `app.update.doorhanger` set to `false`
+  * `app.update.silent` set to `true`
 
 ## Mozilla-hosted addons
 
