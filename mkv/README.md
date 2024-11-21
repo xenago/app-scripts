@@ -21,6 +21,10 @@ https://github.com/ietf-wg-cellar/matroska-specification/blob/master/ebml_matros
 
 `"C:\Program Files\MKVToolNix\mkvpropedit.exe" "X:\file.mkv" --edit track:s1 --set flag-hearing-impaired=1`
 
+#### Equivalent action in `jmkvpropedit` GUI
+
+![Set SDH flag to first subtitle track in jmkvpropedit](./jmkvpropedit_sdh_example.png)
+
 ### List Properties
 
 Output of command `mkvpropedit --list-property-names` for `v88.0`:
