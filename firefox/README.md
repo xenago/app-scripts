@@ -27,9 +27,18 @@ Disable remote extension blocking on '[quarantined](https://support.mozilla.org/
 
 * `extensions.quarantinedDomains.enabled` set to `false`
 
+Improve clipboard support (useful with e.g. Apache Guacamole):
+
+* `dom.events.asyncClipboard.readText` set to `true`
+* `dom.events.testing.asyncClipboard` set to `true`
+
 On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
+
+* The following `about:config` options are **PLACEBOS AND SHOULD BE AVOIDED**
+  * `app.update.doorhanger` set to `false`
+  * `app.update.silent` set to `true`
 
 ## `policies.json` Overrides
 
@@ -39,11 +48,6 @@ Disable automatic updates (holy hell they are irritating, it is as though the br
   * `C:\Program Files\Mozilla Firefox\distribution`
   * `Firefox.app/Contents/Resources/distribution`
   * `/etc/firefox/policies` or `firefox/distribution`
-
-* The following `about:config` options are **PLACEBOS AND SHOULD BE AVOIDED**
-  * `app.update.doorhanger` set to `false`
-  * `app.update.silent` set to `true`
-
 ## Mozilla-hosted addons
 
 * Block ads: [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
