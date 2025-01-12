@@ -1,5 +1,6 @@
 # app-scripts
-Useful commands and scripts for cross-platform apps
+
+Useful notes, commands, scripts, etc. for cross-platform apps.
 
 WIP project to collect and publish my notes/tools.
 
@@ -8,6 +9,7 @@ See also [win-scripts](https://github.com/xenago/win-scripts) and [nix-scripts](
 ## Index
 
 * [Mozilla Firefox](firefox)
+* [MKV](mkv)
 
 ## License
 
