@@ -1,6 +1,34 @@
 # mkv
 
-Manipulation of MKV files with `mkvpropedit` via CLI or with `jmkvpropedit`.
+Notes about working with Matroska Video (MKV) files.
+
+## All-purpose MKV tool
+
+Use `MKVToolNix`.
+
+https://gitlab.com/mbunkus/mkvtoolnix
+
+https://mkvtoolnix.download/downloads.html
+
+Install with `winget` on Windows as `MoritzBunkus.MKVToolNix`.
+
+https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MoritzBunkus/MKVToolNix
+
+## Extracting tracks from MKVs
+
+Use `mkvcleaver` (requires MKVToolNix).
+
+https://blogs.sapib.ca/apps/mkvcleaver/
+
+https://www.videohelp.com/software/MKVcleaver
+
+## Remuxing MKVs
+
+Rewriting MKV files into new, modified versions without re-encoding the original tracks (remuxing) can be done with MKVToolNix. It can also convert files from other container formats into MKV.
+
+## Editing MKVs
+
+In-place modification of MKV files with `mkvpropedit` via CLI or with the `jmkvpropedit` GUI (both require MKVToolNix).
 
 ### Flags
 
