@@ -81,7 +81,7 @@ Make sure to set to `3D left/right`:
 
 ![DCP-o-matic UI](./dcp_o_matic_ui.png)
 
-Scope usually requires additional adjustments to crop and fit:
+Scope usually requires additional adjustments to achieve an optimal fit, but be sure to check both eyes when working in 3D to avoid over-cropping:
 
 ![DCP-o-matic scope](./dcp_o_matic_scope.png)
 
