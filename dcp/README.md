@@ -47,11 +47,13 @@ Name the movie
 
 ![Name movie in BD3D2MK3D](./bd3d2mk3d_name.png)
 
-Configure the script in the options tab to:
-- Demux the contents of the MKV file into separate streams
-- Encode in Full Side-By-Side 3D at a 20-30% higher bitrate than the source file
+Configure the `AviSynth` script in the `Options` tab:
+- For `Stereoscopy`, use `Full - Side By Side` 
+- For `x264`, use `CRF` around `18` to preserve as much visual quality as possible
 - Mux to MKV file
-- Define a valid temp directory (needs to be a full/non-relative path, approx 3-4x the space of the original file to complete operation)
+- Define a valid temp directory
+  - Needs to be a full/non-relative path
+  - Can require 3-4x the space of the original file to complete operation
 
 ![Configure script options in BD3D2MK3D](./bd3d2mk3d_options.png)
 
@@ -59,7 +61,7 @@ That also generates the script to encode: `__ENCODE_3D_LAUNCHER.cmd`
 
 ![Generated script by BD3D2MK3D](./bd3d2mk3d_script.png)
 
-This ran at approximately double speed of 50fps on an 8-core cpu, taking about half the film’s runtime to finish.
+This ran at approximately 50fps on an 8-core cpu, thus taking about half the film’s runtime to finish.
 
 #### Use DCP-o-matic to encode the source into a DCP
 
@@ -73,14 +75,18 @@ Then go to the DCP settings and configure them accordingly
 
 ![DCP-o-matic audio settings](./dcp_o_matic_audio.png)
 
-Pack into a DCP: this is processor intensive and ran at approximately 25fps, so taking about as long as the film’s runtime
+Pack into a DCP:
 
 ![DCP-o-matic start job](./dcp_o_matic_start.png)
 
+This is processor intensive and ran at approximately 25fps, thus taking about as long as the film’s runtime to finish.
+
 Result will have extra black padding on the sides to ensure it matches the theatrical 1.85 flat aspect ratio container instead of Blu-ray 1.78. In the DCP, the configuration [should be as-expected for 3D](https://en.easydcp.com/support-faq.php?id=24&p=which-aspect-ratio-should-i-choose-for-my-dcp).
+
+![DCP output folder](./dcp_result_folder.png)
+
+![DCP output result](./dcp_result.png)
 
 ![DCP 3D formats](./dcp_3d_formats.png)
 
 ![DCP 3D result](./dcp_3d_result.png)
-
-![DCP output result](./dcp_result.png)
