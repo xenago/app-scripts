@@ -69,7 +69,11 @@ Make sure to set to `3D left/right`:
 
 ![DCP-o-matic UI](./dcp_o_matic_ui.png)
 
-Then go to the DCP settings and configure them accordingly
+Scope usually requires additional adjustments to crop and fit:
+
+![DCP-o-matic scope](./dcp_o_matic_scope.png)
+
+Then go to the DCP settings and configure them accordingly:
 
 ![DCP-o-matic video settings](./dcp_o_matic_video.png)
 
