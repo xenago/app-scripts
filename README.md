@@ -8,8 +8,9 @@ See also [win-scripts](https://github.com/xenago/win-scripts) and [nix-scripts](
 
 ## Index
 
+* [Digital Cinema Package (DCP)](dcp)
 * [Mozilla Firefox](firefox)
-* [MKV](mkv)
+* [Matroska Video (MKV)](mkv)
 
 ## License
 
