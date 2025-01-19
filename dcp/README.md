@@ -51,7 +51,7 @@ Configure the script in the options tab to:
 - Demux the contents of the MKV file into separate streams
 - Encode in frame-sequential 3D at a 20-30% higher bitrate than the source file
 - Mux to mkv file
-- Use the correct temp directory (requires approx 3-4x the space of the original file)
+- Define a valid temp directory (needs to be a full/non-relative path, approx 3-4x the space of the original file)
 
 ![Configure script options in BD3D2MK3D](./bd3d2mk3d_options.png)
 
