@@ -22,7 +22,7 @@ Convert MVC-encoded stereoscopic 3D content, such as royalty-free 3D Blu-rays, t
 
 3. Create a .MKV file from the source disc, making sure to select the stereo 3D video track
 
-#### Use BD3D2MK3D to create a frame-sequential intermediate file
+#### Use BD3D2MK3D to create an intermediate file
 
 Install AviSynth+:
 
@@ -49,9 +49,9 @@ Name the movie
 
 Configure the script in the options tab to:
 - Demux the contents of the MKV file into separate streams
-- Encode in frame-sequential 3D at a 20-30% higher bitrate than the source file
-- Mux to mkv file
-- Define a valid temp directory (needs to be a full/non-relative path, approx 3-4x the space of the original file)
+- Encode in Full Side-By-Side 3D at a 20-30% higher bitrate than the source file
+- Mux to MKV file
+- Define a valid temp directory (needs to be a full/non-relative path, approx 3-4x the space of the original file to complete operation)
 
 ![Configure script options in BD3D2MK3D](./bd3d2mk3d_options.png)
 
@@ -63,7 +63,7 @@ This ran at approximately double speed of 50fps on an 8-core cpu, taking about h
 
 #### Use DCP-o-matic to encode the source into a DCP
 
-Make sure to set to 3D alternate
+Make sure to set to `3D left/right`:
 
 ![DCP-o-matic UI](./dcp_o_matic_ui.png)
 
