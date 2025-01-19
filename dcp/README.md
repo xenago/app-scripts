@@ -82,3 +82,5 @@ Result will have extra black padding on the sides to ensure it matches the theat
 ![DCP 3D formats](./dcp_3d_formats.png)
 
 ![DCP 3D result](./dcp_3d_result.png)
+
+![DCP output result](./dcp_result.png)
