@@ -1,59 +1,71 @@
 # Digital Cinema Package (DCP)
 
-Convert files to DCP standard format for digital projection.
+Package DCP standard format files for digital projection.
 
-## 3D
+## Software
 
-Convert MVC-encoded stereoscopic 3D content, such as royalty-free 3D Blu-rays, to MJPEG-encoded DCP format.
+* [DCP-o-matic](https://dcpomatic.com/get-started.php)
+  * Windows, Mac, and Linux
+  * Create DCP files from source material in other formats
 
-### High-level overview:
+* [MakeMKV](https://www.makemkv.com/)
+  * Windows and Mac
+  * Retrieve media stored on disc formats like DVD and Blu-ray
 
-1. [MakeMKV](https://www.makemkv.com/)
+* [BD3D2MK3D](https://download.videohelp.com/r0lZ/BD3D2AVS/#current)
+  * **\*Windows-only\***
+  * Convert MVC stereo 3D video content to other formats
 
-2. [BD3D2MK3D](https://download.videohelp.com/r0lZ/BD3D2AVS/#current)
-
-3. [DCP-o-matic](https://dcpomatic.com/get-started.php)
-
-#### Use MakeMKV to create a bit-perfect source .MKV file
+## Use MakeMKV to create a bit-perfect source .MKV file from a disc
 
 1. [Download](https://www.makemkv.com/download/) and install MakeMKV
 
-2. Activate (using [beta key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) if you haven't purchased it, but it is worth the price IMO)
+2. Activate with your key
+  * Use the [beta key](https://forum.makemkv.com/forum/viewtopic.php?t=1053) if you need to test before you purchase
 
-3. Create a .MKV file from the source disc, making sure to select the stereo 3D video track
+4. Create an MKV file from the source disc
+  * **Make sure to select the stereo video track if the movie is 3D!**
+  * Select the audio track(s) you need, usually just one
+  * Don't include captions unless you need to burn in the `Forced` subtitles
 
-#### Use BD3D2MK3D to create an intermediate file
+## 3D
+
+Convert stereoscopic 3D content encoded in MVC (used by the 3D Blu-ray format) to DCP.
+
+### Use BD3D2MK3D to create an intermediate file
 
 Install AviSynth+:
 
-https://github.com/pinterf/AviSynthPlus/releases ← I used this but it seems like it’s older
-https://github.com/AviSynth/AviSynthPlus/releases 
+* https://github.com/pinterf/AviSynthPlus/releases
+  * I used this, but it seems like it’s older
+* https://github.com/AviSynth/AviSynthPlus/releases
+  * Looks actively-maintained
 
 Install and run BD3D2MK3D:
 
-https://download.videohelp.com/r0lZ/BD3D2AVS/#current
+* https://download.videohelp.com/r0lZ/BD3D2AVS/#current
 
-Use the MKV 3D mode, not the Blu-ray 3D mode:
+Switch from `Blu-ray 3D mode` to `3D MKV mode` (or drag and drop) to open an MKV file created with MakeMKV:
 
 ![Blu-ray 3D mode in BD3D2MK3D](./bd3d2mk3d_bluray_mode.png)
 
 ![MKV 3D mode in BD3D2MK3D](./bd3d2mk3d_mkv_mode.png)
 
-Include no subtitles, and only the main audio stream:
+Include only the main audio stream, and no subtitles unless you know exactly what you're doing:
 
 ![Stream select in BD3D2MK3D](./bd3d2mk3d_streams.png)
 
-Name the movie
+Name the movie:
 
 ![Name movie in BD3D2MK3D](./bd3d2mk3d_name.png)
 
 Configure the `AviSynth` script in the `Options` tab:
-- For `Stereoscopy`, use `Full - Side By Side` 
-- For `x264`, use `CRF` around `18` to preserve as much visual quality as possible
-- Mux to MKV file
+- For `Stereoscopy`, use `Side By Side` (`Half` should be unchecked to enable full-res output)
+- For `x264`, use `CRF` around `15` to preserve as much visual quality as possible
 - Define a valid temp directory
   - Needs to be a full/non-relative path
-  - Can require 3-4x the space of the original file to complete operation
+  - Can require >3x the space of the original file to complete operation
+- `mux to MKV file` checked
 
 ![Configure script options in BD3D2MK3D](./bd3d2mk3d_options.png)
 
@@ -63,7 +75,7 @@ That also generates the script to encode: `__ENCODE_3D_LAUNCHER.cmd`
 
 This ran at approximately 50fps on an 8-core cpu, thus taking about half the film’s runtime to finish.
 
-#### Use DCP-o-matic to encode the source into a DCP
+### Use DCP-o-matic to encode a 3D source into a DCP
 
 Make sure to set to `3D left/right`:
 
@@ -85,7 +97,7 @@ Pack into a DCP:
 
 This is processor intensive and ran at approximately 25fps, thus taking about as long as the film’s runtime to finish.
 
-Result will have extra black padding on the sides to ensure it matches the theatrical 1.85 flat aspect ratio container instead of Blu-ray 1.78. In the DCP, the configuration [should be as-expected for 3D](https://en.easydcp.com/support-faq.php?id=24&p=which-aspect-ratio-should-i-choose-for-my-dcp).
+Result will have extra padding on the sides as necessary to ensure it will properly fit in the theatrical 1.85 Flat container (or 2.39 Scope container) instead of the 1.78 aspect ratio of Blu-ray. In the DCP, the configuration [should be as-expected for 3D](https://en.easydcp.com/support-faq.php?id=24&p=which-aspect-ratio-should-i-choose-for-my-dcp).
 
 ![DCP output folder](./dcp_result_folder.png)
 
