@@ -23,6 +23,12 @@ Disable showing 'suggested sites' nonsense (Wikipedia, Facebook, Twitter, YouTub
 
 * `browser.urlbar.suggest.topsites` set to `false`
 
+Disable OHTTP nonsense:
+
+* `network.trr.use_ohttp` set to `false`
+* `network.trr.ohttp.config_uri` set to nothing
+* `network.trr.ohttp.relay_uri` set to nothing
+
 Disable remote extension blocking on '[quarantined](https://support.mozilla.org/kb/quarantined-domains)' domains:
 
 * `extensions.quarantinedDomains.enabled` set to `false`
