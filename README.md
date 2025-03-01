@@ -11,6 +11,7 @@ See also [win-scripts](https://github.com/xenago/win-scripts) and [nix-scripts](
 * [Digital Cinema Package (DCP)](dcp)
 * [Mozilla Firefox](firefox)
 * [Matroska Video (MKV)](mkv)
+* [OpenSSH](ssh)
 
 ## License
 
