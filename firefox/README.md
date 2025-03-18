@@ -15,6 +15,11 @@ Disable user-hostile "what's new" page:
   * https://kb.mozillazine.org/Startup.homepage_override_url
   * When a user starts up their browser after upgrading (i.e., if browser.startup.homepage_override.mstone is different than the last time the browser started), the URL specified in this preference is loaded instead of their homepage
 
+Disable AI-ML chatbot
+
+* `browser.ml.chat.enabled` set to `false`
+* Disable the sidebar in Settings
+
 Restore ability to add custom search engines (a particularly ridiculous move by Mozilla):
 
 * `browser.urlbar.update2.engineAliasRefresh` set to `true`
