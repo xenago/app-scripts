@@ -2,6 +2,11 @@
 
 Control Mozilla Firefox.
 
+## Prevent automatic downloads from saving
+
+1. In `about:preferences#general` under `Files and Applications`, select `Always ask you where to save files`
+2. Scroll a bit lower down to `Applications` and locate `What should Firefox do with other files?` - set this to  `Ask whether to open or save files`
+
 ## `about:config` Overrides
 
 Disable user-hostile "what's new" page:
