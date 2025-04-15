@@ -25,6 +25,10 @@ Disable AI-ML chatbot
 * `browser.ml.chat.enabled` set to `false`
 * Disable the sidebar in Settings
 
+Disable AI-ML link preview
+
+* `browser.ml.linkPreview` set to `false`
+
 Restore ability to add custom search engines (a particularly ridiculous move by Mozilla):
 
 * `browser.urlbar.update2.engineAliasRefresh` set to `true`
