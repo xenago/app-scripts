@@ -64,8 +64,9 @@ On Developer version only, disable addon signing:
 
 Disable automatic updates (holy hell they are irritating, it is as though the browser is designed to kill productivity):
 
-* [Copy](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson) `policies.json` to one of these locations based on OS:
+* [Copy](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson) `policies.json` to one of these `distribution` directories (create if it does not exist), based on OS:
   * `C:\Program Files\Mozilla Firefox\distribution`
+    * Or for local install, `%LOCALAPPDATA%\Mozilla Firefox\distribution`
   * `Firefox.app/Contents/Resources/distribution`
   * `/etc/firefox/policies` or `firefox/distribution`
 ## Mozilla-hosted addons
