@@ -6,7 +6,7 @@ Notes about working with Matroska Video (MKV) files.
 
 Use `MKVToolNix`.
 
-https://gitlab.com/mbunkus/mkvtoolnix
+https://codeberg.org/mbunkus/mkvtoolnix (formerly at https://gitlab.com/mbunkus/mkvtoolnix)
 
 https://mkvtoolnix.download/downloads.html
 
@@ -25,6 +25,19 @@ https://www.videohelp.com/software/MKVcleaver
 ## Remuxing MKVs
 
 Rewriting MKV files into new, modified versions without re-encoding the original tracks (remuxing) can be done with MKVToolNix. It can also convert files from other container formats into MKV.
+
+### Appending files vs. adding as additional parts
+
+In MKVToolNix, files can be combined to run one after another, if they are similar enough:
+
+https://codeberg.org/mbunkus/mkvtoolnix/wiki/Adding-files-vs.-Appending-files-vs.-adding-as-additional-parts#appending-files-vs-adding-as-additional-parts
+
+**TL;DR from the official doc:**
+
+* Media files split somewhere in the middle at an arbitrary position so that the second part doesn't have a full set of headers ➡ choose `Add as additional parts`
+  * DVDs use this method, for example the `VTS_01_1.VOB`/`VTS_01_2.VOB` files are all logically part of one huge file.
+* For most cases, files contain full sets of headers ➡ choose `Append`
+  * Blu-ray `.m2ts` files can have different internal stream/track IDs for the same logical video track, so the best option is to add `.mpls` playlist files instead
 
 ## Editing MKVs
 
