@@ -52,18 +52,20 @@ Improve clipboard support (useful with e.g. Apache Guacamole):
 * `dom.events.asyncClipboard.readText` set to `true`
 * `dom.events.testing.asyncClipboard` set to `true`
 
-Disable tab grouping (activates when moving tabs around unnecessarily):
+Disable tab grouping, or add a higher delay (activates when moving tabs around unnecessarily):
 
 * `browser.tabs.groups.enabled` set to `false`
 * `browser.tabs.groups.smart.enabled` set to `false`
+* Alternatively, set `browser.tabs.dragDrop.createGroup.delayMS` to a large number of milliseconds
 
 On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
 
-* The following `about:config` options are **PLACEBOS AND SHOULD BE AVOIDED**
-  * `app.update.doorhanger` set to `false`
-  * `app.update.silent` set to `true`
+The following `about:config` options are **PLACEBOS AND SHOULD BE AVOIDED**
+
+* `app.update.doorhanger` set to `false`
+* `app.update.silent` set to `true`
 
 ## `policies.json` Overrides
 
