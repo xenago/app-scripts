@@ -52,6 +52,11 @@ Improve clipboard support (useful with e.g. Apache Guacamole):
 * `dom.events.asyncClipboard.readText` set to `true`
 * `dom.events.testing.asyncClipboard` set to `true`
 
+Disable tab grouping (activates when moving tabs around unnecessarily):
+
+* `browser.tabs.groups.enabled` set to `false`
+* `browser.tabs.groups.smart.enabled` set to `false`
+
 On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
