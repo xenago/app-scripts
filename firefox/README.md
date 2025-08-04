@@ -9,6 +9,12 @@ Control Mozilla Firefox.
 
 ## `about:config` Overrides
 
+Enable a reasonable UI density instead of wasting the screen space:
+
+* `browser.compactmode.show` set to `true`
+  * Then, right click the browser toolbar UI and select `Customize Toolbar`
+  * In the bottom left of the customization menu, select `Density > Compact (not supported)`
+
 Disable user-hostile "what's new" page:
 
 * `browser.startup.homepage_override.mstone` set to `ignore`
@@ -25,9 +31,15 @@ Disable AI-ML chatbot
 * `browser.ml.chat.enabled` set to `false`
 * Disable the sidebar in Settings
 
-Disable AI-ML link preview
+Disable AI-ML anti-features
 
 * `browser.ml.linkPreview` set to `false`
+* `browser.ml.chat.enabled` set to `false`
+* `browser.ml.chat.shortcuts` set to `false`
+* `browser.ml.chat.shortcuts.custom` set to `false`
+* `browser.ml.chat.sidebar` set to `false`
+* `browser.ml.enable` set to `false`
+* As a sidenote, there are some [threads](https://github.com/zen-browser/desktop/discussions/6236) out there with (seemingly real) users openly admitting to using these ML models, so it seems prudent to preemptively [block](https://github.com/settings/blocked_users) those users on GitHub to prevent tainted submissions to projects
 
 Restore ability to add custom search engines (a particularly ridiculous move by Mozilla):
 
