@@ -33,6 +33,7 @@ Disable AI-ML chatbot
 
 Disable AI-ML anti-features
 
+* `browser.tabs.groups.smart.userEnabled` set to `false`
 * `browser.tabs.groups.smart` set to `false`
 * `browser.ml.linkPreview` set to `false`
 * `browser.ml.chat.enabled` set to `false`
