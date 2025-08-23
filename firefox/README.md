@@ -72,6 +72,9 @@ Disable tab grouping, or add a higher delay (activates when moving tabs around u
 * `browser.tabs.groups.smart.enabled` set to `false`
 * Alternatively, set `browser.tabs.dragDrop.createGroup.delayMS` to a large number of milliseconds
 
+Control tab unloading (can be useful on low-memory machines):
+* `browser.tabs.unloadOnLowMemory` set to `true`
+
 On Developer version only, disable addon signing:
 
 * `xpinstall.signatures.required` set to `false`
