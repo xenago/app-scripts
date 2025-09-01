@@ -2,6 +2,11 @@
 
 Control Mozilla Firefox.
 
+## Identify tabs accessing the network
+
+1. Find IP with increasing data usage in `about:networking#sockets` and copy to clipboard
+2. Find corresponding active tab by URL in `about:networking#dns` with Ctrl+F to find domain
+
 ## Prevent automatic downloads from saving
 
 1. In `about:preferences#general` under `Files and Applications`, select `Always ask you where to save files`
