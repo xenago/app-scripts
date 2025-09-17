@@ -41,7 +41,7 @@ https://codeberg.org/mbunkus/mkvtoolnix/wiki/Adding-files-vs.-Appending-files-vs
 
 ## Editing MKVs
 
-In-place modification of MKV files with `mkvpropedit` via CLI or with the `jmkvpropedit` GUI (both require MKVToolNix).
+In-place modification of MKV files requires MKVToolNix. The files can then be edited with `MKVToolNix GUI` in the `editor` tab menus, with `mkvpropedit` via CLI, or with the `jmkvpropedit` GUI.
 
 ### Flags
 
