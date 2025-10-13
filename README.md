@@ -9,6 +9,7 @@ See also [win-scripts](https://github.com/xenago/win-scripts) and [nix-scripts](
 ## Index
 
 * [Digital Cinema Package (DCP)](dcp)
+* [JetBrains IDEs](jetbrains)
 * [Mozilla Firefox](firefox)
 * [Matroska Video (MKV)](mkv)
 
