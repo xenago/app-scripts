@@ -22,6 +22,16 @@ https://blogs.sapib.ca/apps/mkvcleaver/
 
 https://www.videohelp.com/software/MKVcleaver
 
+## Inspecting MKVs
+
+All the general tools are useful for this but sometimes there are shortcuts.
+
+### If an MKV stops playing before the end of the runtime, how to identify the real video length?
+
+Easiest way is to use MKVcleaver; it will display the runtime of the video in the UI immediately on import.
+
+![View MKV runtime in PotPlayer and video runtime in MKVcleaver](./mkv_runtime_differences.png)
+
 ## Remuxing MKVs
 
 Rewriting MKV files into new, modified versions without re-encoding the original tracks (remuxing) can be done with MKVToolNix. It can also convert files from other container formats into MKV.
