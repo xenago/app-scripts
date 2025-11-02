@@ -181,6 +181,12 @@ It is possible to install the local single-user Firefox alongside the global mul
 3. Start up new Firefox install, go to `about:profiles` and select the one that you imported
 4. Restart browser (and repeat until the default profile is correct)
 
+## Identify tabs accessing the network
+
+1. Find IP with increasing data usage in `about:networking#sockets` and copy to clipboard
+
+2. Find corresponding active tab by URL in `about:networking#dns` with Ctrl+F to find domain
+
 ## Load unsigned addons
 
 Mozilla is an unethical company that tries to prevent users from running their own code, much like Apple and Google. They gaslight users to try to convince them that this for their own benefit, for 'security', when it is in fact so they can block addons which give the user additional freedom.
