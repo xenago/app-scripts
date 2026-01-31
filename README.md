@@ -11,10 +11,8 @@ See also:
 
 ## Index
 
-* [Digital Cinema Package (DCP)](dcp)
 * [JetBrains IDEs](jetbrains)
 * [Mozilla Firefox](firefox)
-* [Matroska Video (MKV)](mkv)
 
 ## License
 
