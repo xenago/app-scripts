@@ -4,7 +4,10 @@ Useful notes, commands, scripts, etc. for cross-platform apps.
 
 WIP project to collect and publish my notes/tools.
 
-See also [win-scripts](https://github.com/xenago/win-scripts) and [nix-scripts](https://github.com/xenago/nix-scripts).
+See also:
+* [media-scripts](https://github.com/xenago/media-scripts)
+* [nix-scripts](https://github.com/xenago/nix-scripts)
+* [win-scripts](https://github.com/xenago/win-scripts)
 
 ## Index
 
