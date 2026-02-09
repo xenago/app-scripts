@@ -12,6 +12,7 @@ See also:
 ## Index
 
 * [JetBrains IDEs](jetbrains)
+* [FileBot](filebot)
 * [Mozilla Firefox](firefox)
 
 ## License
