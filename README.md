@@ -13,6 +13,7 @@ See also:
 
 * [JetBrains IDEs](jetbrains)
 * [FileBot](filebot)
+* [Git](git)
 * [Mozilla Firefox](firefox)
 
 ## License
