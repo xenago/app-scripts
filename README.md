@@ -15,6 +15,7 @@ See also:
 * [FileBot](filebot)
 * [Git](git)
 * [Mozilla Firefox](firefox)
+* [Plex](plex)
 
 ## License
 
